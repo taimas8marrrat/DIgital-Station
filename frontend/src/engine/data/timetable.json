@@ -1,0 +1,798 @@
+{
+ "_note": "Mock-расписание. Время — минуты от начала суток. Сгенерировано generate_timetable.py Грузовые распределены равномерно по суткам (v2.3), окно демо 11:30 сохранено.",
+ "seed": 42,
+ "trains": [
+  {
+   "id": "F2058",
+   "number": "2058",
+   "kind": "freight",
+   "from": "east",
+   "to": "south",
+   "length": 700,
+   "arr": 20,
+   "dep": 67,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P101",
+   "number": "101",
+   "kind": "passenger",
+   "route": {
+    "ru": "Алматы — Семей",
+    "kk": "Алматы — Семей"
+   },
+   "from": "south",
+   "to": "north",
+   "length": 350,
+   "arr": 40,
+   "dep": 55,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2060",
+   "number": "2060",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 780,
+   "arr": 60,
+   "dep": 82,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2008",
+   "number": "2008",
+   "kind": "freight",
+   "from": "south",
+   "to": "east",
+   "length": 900,
+   "arr": 100,
+   "dep": 142,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2028",
+   "number": "2028",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 850,
+   "arr": 140,
+   "dep": 160,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2069",
+   "number": "2069",
+   "kind": "freight",
+   "from": "north",
+   "to": "south",
+   "length": 700,
+   "arr": 180,
+   "dep": 221,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P102",
+   "number": "102",
+   "kind": "passenger",
+   "route": {
+    "ru": "Семей — Алматы",
+    "kk": "Семей — Алматы"
+   },
+   "from": "north",
+   "to": "south",
+   "length": 420,
+   "arr": 187,
+   "dep": 207,
+   "ops": {
+    "stop": 20,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2018",
+   "number": "2018",
+   "kind": "freight",
+   "from": "south",
+   "to": "east",
+   "length": 700,
+   "arr": 220,
+   "dep": 270,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2021",
+   "number": "2021",
+   "kind": "freight",
+   "from": "west",
+   "to": "east",
+   "length": 1040,
+   "arr": 260,
+   "dep": 310,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P103",
+   "number": "103",
+   "kind": "passenger",
+   "route": {
+    "ru": "Астана — Семей",
+    "kk": "Астана — Семей"
+   },
+   "from": "west",
+   "to": "north",
+   "length": 350,
+   "arr": 294,
+   "dep": 309,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2010",
+   "number": "2010",
+   "kind": "freight",
+   "from": "south",
+   "to": "north",
+   "length": 980,
+   "arr": 300,
+   "dep": 351,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2045",
+   "number": "2045",
+   "kind": "freight",
+   "from": "west",
+   "to": "east",
+   "length": 900,
+   "arr": 340,
+   "dep": 387,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2034",
+   "number": "2034",
+   "kind": "freight",
+   "from": "south",
+   "to": "east",
+   "length": 1040,
+   "arr": 380,
+   "dep": 428,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2042",
+   "number": "2042",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 780,
+   "arr": 420,
+   "dep": 445,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2051",
+   "number": "2051",
+   "kind": "freight",
+   "from": "north",
+   "to": "south",
+   "length": 1040,
+   "arr": 460,
+   "dep": 513,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P104",
+   "number": "104",
+   "kind": "passenger",
+   "route": {
+    "ru": "Семей — Астана",
+    "kk": "Семей — Астана"
+   },
+   "from": "north",
+   "to": "west",
+   "length": 350,
+   "arr": 463,
+   "dep": 488,
+   "ops": {
+    "stop": 25,
+    "inspection": false,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2014",
+   "number": "2014",
+   "kind": "freight",
+   "from": "east",
+   "to": "south",
+   "length": 820,
+   "arr": 500,
+   "dep": 545,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2056",
+   "number": "2056",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 780,
+   "arr": 540,
+   "dep": 549,
+   "ops": {
+    "stop": 2,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": false
+   }
+  },
+  {
+   "id": "F2024",
+   "number": "2024",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 900,
+   "arr": 580,
+   "dep": 608,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P105",
+   "number": "105",
+   "kind": "passenger",
+   "route": {
+    "ru": "Достык — Алматы",
+    "kk": "Достық — Алматы"
+   },
+   "from": "east",
+   "to": "south",
+   "length": 350,
+   "arr": 597,
+   "dep": 617,
+   "ops": {
+    "stop": 20,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2039",
+   "number": "2039",
+   "kind": "freight",
+   "from": "west",
+   "to": "east",
+   "length": 820,
+   "arr": 620,
+   "dep": 663,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2017",
+   "number": "2017",
+   "kind": "freight",
+   "from": "west",
+   "to": "east",
+   "length": 1040,
+   "arr": 660,
+   "dep": 707,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2071",
+   "number": "2071",
+   "kind": "freight",
+   "from": "west",
+   "to": "east",
+   "length": 700,
+   "arr": 694,
+   "dep": 741,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2000",
+   "number": "2000",
+   "kind": "freight",
+   "from": "south",
+   "to": "east",
+   "length": 820,
+   "arr": 696,
+   "dep": 746,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2036",
+   "number": "2036",
+   "kind": "freight",
+   "from": "south",
+   "to": "north",
+   "length": 980,
+   "arr": 696,
+   "dep": 741,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P106",
+   "number": "106",
+   "kind": "passenger",
+   "route": {
+    "ru": "Алматы — Достык",
+    "kk": "Алматы — Достық"
+   },
+   "from": "south",
+   "to": "east",
+   "length": 420,
+   "arr": 701,
+   "dep": 716,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2012",
+   "number": "2012",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 900,
+   "arr": 727,
+   "dep": 731,
+   "ops": {
+    "stop": 2,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": false
+   }
+  },
+  {
+   "id": "F2041",
+   "number": "2041",
+   "kind": "freight",
+   "from": "north",
+   "to": "south",
+   "length": 1040,
+   "arr": 740,
+   "dep": 786,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2002",
+   "number": "2002",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 900,
+   "arr": 780,
+   "dep": 790,
+   "ops": {
+    "stop": 2,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": false
+   }
+  },
+  {
+   "id": "F2027",
+   "number": "2027",
+   "kind": "freight",
+   "from": "north",
+   "to": "south",
+   "length": 820,
+   "arr": 820,
+   "dep": 875,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P107",
+   "number": "107",
+   "kind": "passenger",
+   "route": {
+    "ru": "Алматы — Семей",
+    "kk": "Алматы — Семей"
+   },
+   "from": "south",
+   "to": "north",
+   "length": 350,
+   "arr": 854,
+   "dep": 879,
+   "ops": {
+    "stop": 25,
+    "inspection": false,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2030",
+   "number": "2030",
+   "kind": "freight",
+   "from": "south",
+   "to": "north",
+   "length": 980,
+   "arr": 860,
+   "dep": 912,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2066",
+   "number": "2066",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 950,
+   "arr": 900,
+   "dep": 929,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2004",
+   "number": "2004",
+   "kind": "freight",
+   "from": "south",
+   "to": "north",
+   "length": 980,
+   "arr": 940,
+   "dep": 982,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2032",
+   "number": "2032",
+   "kind": "freight",
+   "from": "east",
+   "to": "south",
+   "length": 1040,
+   "arr": 980,
+   "dep": 1020,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P108",
+   "number": "108",
+   "kind": "passenger",
+   "route": {
+    "ru": "Семей — Алматы",
+    "kk": "Семей — Алматы"
+   },
+   "from": "north",
+   "to": "south",
+   "length": 540,
+   "arr": 1015,
+   "dep": 1030,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2064",
+   "number": "2064",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 850,
+   "arr": 1020,
+   "dep": 1038,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2062",
+   "number": "2062",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 850,
+   "arr": 1060,
+   "dep": 1077,
+   "ops": {
+    "stop": 2,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": false
+   }
+  },
+  {
+   "id": "F2022",
+   "number": "2022",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 950,
+   "arr": 1100,
+   "dep": 1119,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P109",
+   "number": "109",
+   "kind": "passenger",
+   "route": {
+    "ru": "Астана — Семей",
+    "kk": "Астана — Семей"
+   },
+   "from": "west",
+   "to": "north",
+   "length": 480,
+   "arr": 1134,
+   "dep": 1154,
+   "ops": {
+    "stop": 20,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2048",
+   "number": "2048",
+   "kind": "freight",
+   "from": "south",
+   "to": "north",
+   "length": 820,
+   "arr": 1140,
+   "dep": 1195,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2072",
+   "number": "2072",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 950,
+   "arr": 1180,
+   "dep": 1200,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2053",
+   "number": "2053",
+   "kind": "freight",
+   "from": "north",
+   "to": "south",
+   "length": 820,
+   "arr": 1220,
+   "dep": 1269,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2046",
+   "number": "2046",
+   "kind": "container",
+   "from": "east",
+   "to": "west",
+   "length": 780,
+   "arr": 1260,
+   "dep": 1290,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2006",
+   "number": "2006",
+   "kind": "freight",
+   "from": "east",
+   "to": "south",
+   "length": 900,
+   "arr": 1300,
+   "dep": 1346,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "P110",
+   "number": "110",
+   "kind": "passenger",
+   "route": {
+    "ru": "Семей — Астана",
+    "kk": "Семей — Астана"
+   },
+   "from": "north",
+   "to": "west",
+   "length": 420,
+   "arr": 1311,
+   "dep": 1326,
+   "ops": {
+    "stop": 15,
+    "inspection": false,
+    "loco_change": true,
+    "crew_change": true
+   }
+  },
+  {
+   "id": "F2055",
+   "number": "2055",
+   "kind": "freight",
+   "from": "west",
+   "to": "east",
+   "length": 980,
+   "arr": 1340,
+   "dep": 1394,
+   "ops": {
+    "stop": 20,
+    "inspection": true,
+    "loco_change": false,
+    "crew_change": true
+   }
+  }
+ ]
+}

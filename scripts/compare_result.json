@@ -1,0 +1,282 @@
+{
+ "rows": [
+  {
+   "seed": 1,
+   "manual": {
+    "departed": 47,
+    "total_delay": 1106.0,
+    "avg_delay": 23.53191489361702,
+    "passenger_delay": 98.0,
+    "wait": 1092.0,
+    "solves": 285,
+    "avg_solve_ms": 0.1826874035087581
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 216.0,
+    "avg_delay": 4.595744680851064,
+    "passenger_delay": 85.0,
+    "wait": 8.0,
+    "solves": 154,
+    "avg_solve_ms": 25.369357285713573
+   }
+  },
+  {
+   "seed": 2,
+   "manual": {
+    "departed": 47,
+    "total_delay": 1559.0,
+    "avg_delay": 33.170212765957444,
+    "passenger_delay": 67.0,
+    "wait": 1548.0,
+    "solves": 281,
+    "avg_solve_ms": 0.19609743060492563
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 148.0,
+    "avg_delay": 3.148936170212766,
+    "passenger_delay": 62.0,
+    "wait": 9.0,
+    "solves": 148,
+    "avg_solve_ms": 25.157993858108785
+   }
+  },
+  {
+   "seed": 3,
+   "manual": {
+    "departed": 47,
+    "total_delay": 774.0,
+    "avg_delay": 16.46808510638298,
+    "passenger_delay": 146.0,
+    "wait": 773.0,
+    "solves": 276,
+    "avg_solve_ms": 0.17655400724537607
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 156.0,
+    "avg_delay": 3.3191489361702127,
+    "passenger_delay": 132.0,
+    "wait": 14.0,
+    "solves": 155,
+    "avg_solve_ms": 24.257843354838876
+   }
+  },
+  {
+   "seed": 4,
+   "manual": {
+    "departed": 47,
+    "total_delay": 1230.0,
+    "avg_delay": 26.170212765957448,
+    "passenger_delay": 63.0,
+    "wait": 1202.0,
+    "solves": 277,
+    "avg_solve_ms": 0.17656231408007225
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 214.0,
+    "avg_delay": 4.553191489361702,
+    "passenger_delay": 54.0,
+    "wait": 50.0,
+    "solves": 153,
+    "avg_solve_ms": 65.97154618300628
+   }
+  },
+  {
+   "seed": 5,
+   "manual": {
+    "departed": 47,
+    "total_delay": 915.0,
+    "avg_delay": 19.46808510638298,
+    "passenger_delay": 97.0,
+    "wait": 881.0,
+    "solves": 286,
+    "avg_solve_ms": 0.2341764090911088
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 217.0,
+    "avg_delay": 4.617021276595745,
+    "passenger_delay": 89.0,
+    "wait": 14.0,
+    "solves": 148,
+    "avg_solve_ms": 23.662481527027843
+   }
+  },
+  {
+   "seed": 6,
+   "manual": {
+    "departed": 47,
+    "total_delay": 846.0,
+    "avg_delay": 18.0,
+    "passenger_delay": 72.0,
+    "wait": 825.0,
+    "solves": 281,
+    "avg_solve_ms": 0.19242556583654827
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 120.0,
+    "avg_delay": 2.5531914893617023,
+    "passenger_delay": 66.0,
+    "wait": 6.0,
+    "solves": 153,
+    "avg_solve_ms": 22.13939569281075
+   }
+  },
+  {
+   "seed": 7,
+   "manual": {
+    "departed": 47,
+    "total_delay": 1319.0,
+    "avg_delay": 28.06382978723404,
+    "passenger_delay": 55.0,
+    "wait": 1282.0,
+    "solves": 284,
+    "avg_solve_ms": 0.17223575352151693
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 195.0,
+    "avg_delay": 4.148936170212766,
+    "passenger_delay": 48.0,
+    "wait": 9.0,
+    "solves": 148,
+    "avg_solve_ms": 90.78341231081008
+   }
+  },
+  {
+   "seed": 8,
+   "manual": {
+    "departed": 47,
+    "total_delay": 2424.0,
+    "avg_delay": 51.57446808510638,
+    "passenger_delay": 55.0,
+    "wait": 2515.0,
+    "solves": 275,
+    "avg_solve_ms": 0.19617683999905983
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 99.0,
+    "avg_delay": 2.106382978723404,
+    "passenger_delay": 49.0,
+    "wait": 10.0,
+    "solves": 151,
+    "avg_solve_ms": 168.7248877152306
+   }
+  },
+  {
+   "seed": 9,
+   "manual": {
+    "departed": 47,
+    "total_delay": 840.0,
+    "avg_delay": 17.872340425531913,
+    "passenger_delay": 145.0,
+    "wait": 819.0,
+    "solves": 278,
+    "avg_solve_ms": 0.17352012949600998
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 162.0,
+    "avg_delay": 3.4468085106382977,
+    "passenger_delay": 137.0,
+    "wait": 9.0,
+    "solves": 153,
+    "avg_solve_ms": 24.00573762091512
+   }
+  },
+  {
+   "seed": 10,
+   "manual": {
+    "departed": 47,
+    "total_delay": 821.0,
+    "avg_delay": 17.46808510638298,
+    "passenger_delay": 126.0,
+    "wait": 770.0,
+    "solves": 267,
+    "avg_solve_ms": 0.17661167790153626
+   },
+   "smart": {
+    "departed": 47,
+    "total_delay": 205.0,
+    "avg_delay": 4.361702127659575,
+    "passenger_delay": 117.0,
+    "wait": 2.0,
+    "solves": 154,
+    "avg_solve_ms": 19.671582071429793
+   }
+  }
+ ],
+ "summary": {
+  "total_delay": {
+   "manual": [
+    1183.4,
+    506.5631911880952
+   ],
+   "smart": [
+    173.2,
+    42.54879551761718
+   ]
+  },
+  "avg_delay": {
+   "manual": [
+    25.17872340425532,
+    10.777940238044577
+   ],
+   "smart": [
+    3.6851063829787236,
+    0.9052935216514295
+   ]
+  },
+  "passenger_delay": {
+   "manual": [
+    92.4,
+    35.8149565281198
+   ],
+   "smart": [
+    83.9,
+    34.08632831177007
+   ]
+  },
+  "wait": {
+   "manual": [
+    1170.7,
+    539.0229947682092
+   ],
+   "smart": [
+    13.1,
+    13.42841100883579
+   ]
+  },
+  "departed": {
+   "manual": [
+    47,
+    0.0
+   ],
+   "smart": [
+    47,
+    0.0
+   ]
+  },
+  "avg_solve_ms": {
+   "manual": [
+    0.18770475312849122,
+    0.01874190451910468
+   ],
+   "smart": [
+    48.97442376198917,
+    48.25315548088146
+   ]
+  },
+  "delay_reduction_pct": [
+   83.23998916849217,
+   6.375182267446126,
+   75.03045066991474,
+   95.91584158415841
+  ]
+ }
+}

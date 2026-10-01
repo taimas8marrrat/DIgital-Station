@@ -1,0 +1,264 @@
+{
+ "runs": 10,
+ "load": 1.6,
+ "incidents_per_day": 15,
+ "trains_per_day": 69,
+ "summary": {
+  "departed": {
+   "manual_mean": 69,
+   "smart_mean": 69,
+   "manual_sd": 0.0,
+   "smart_sd": 0.0
+  },
+  "on_time_pct": {
+   "manual_mean": 70.14492753623188,
+   "smart_mean": 74.4927536231884,
+   "manual_sd": 2.263840485770042,
+   "smart_sd": 2.9130074264118533
+  },
+  "station_delay_train_h": {
+   "manual_mean": 4.581666666666667,
+   "smart_mean": 3.31,
+   "manual_sd": 1.349885797638699,
+   "smart_sd": 1.0586469351645682
+  },
+  "total_delay_min": {
+   "manual_mean": 475.1,
+   "smart_mean": 395.1,
+   "manual_sd": 94.33180799709078,
+   "smart_sd": 82.07490481261614
+  },
+  "wait_signal_min": {
+   "manual_mean": 296.2,
+   "smart_mean": 203.2,
+   "manual_sd": 83.42637472646166,
+   "smart_sd": 60.537261252884576
+  },
+  "transit_dwell_h": {
+   "manual_mean": 0.5004237288135593,
+   "smart_mean": 0.49901129943502825,
+   "manual_sd": 0.010731675225204311,
+   "smart_sd": 0.010694431749257603
+  },
+  "solve_ms_avg": {
+   "manual_mean": 0.541875,
+   "smart_mean": 124.83451388888889,
+   "manual_sd": 0.14667516613103904,
+   "smart_sd": 6.574180735188791
+  }
+ },
+ "station_delay_reduction_pct": 27.75554747180793,
+ "rows": [
+  {
+   "seed": 1,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 71.01449275362319,
+    "station_delay_train_h": 3.0,
+    "total_delay_min": 400.0,
+    "wait_signal_min": 197.0,
+    "transit_dwell_h": 0.49802259887005645,
+    "solve_ms_avg": 0.975
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 71.01449275362319,
+    "station_delay_train_h": 2.9166666666666665,
+    "total_delay_min": 403.0,
+    "wait_signal_min": 195.0,
+    "transit_dwell_h": 0.4963276836158192,
+    "solve_ms_avg": 143.16875
+   }
+  },
+  {
+   "seed": 2,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 71.01449275362319,
+    "station_delay_train_h": 2.966666666666667,
+    "total_delay_min": 384.0,
+    "wait_signal_min": 257.0,
+    "transit_dwell_h": 0.4892655367231638,
+    "solve_ms_avg": 0.46944444444444444
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 73.91304347826086,
+    "station_delay_train_h": 2.0166666666666666,
+    "total_delay_min": 323.0,
+    "wait_signal_min": 148.0,
+    "transit_dwell_h": 0.48983050847457626,
+    "solve_ms_avg": 119.0625
+   }
+  },
+  {
+   "seed": 3,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 66.66666666666666,
+    "station_delay_train_h": 7.716666666666667,
+    "total_delay_min": 669.0,
+    "wait_signal_min": 498.0,
+    "transit_dwell_h": 0.5067796610169492,
+    "solve_ms_avg": 0.48125
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 71.01449275362319,
+    "station_delay_train_h": 6.05,
+    "total_delay_min": 557.0,
+    "wait_signal_min": 362.0,
+    "transit_dwell_h": 0.5073446327683616,
+    "solve_ms_avg": 125.5513888888889
+   }
+  },
+  {
+   "seed": 4,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 69.56521739130434,
+    "station_delay_train_h": 4.3,
+    "total_delay_min": 570.0,
+    "wait_signal_min": 272.0,
+    "transit_dwell_h": 0.49887005649717514,
+    "solve_ms_avg": 0.4701388888888889
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 71.01449275362319,
+    "station_delay_train_h": 3.066666666666667,
+    "total_delay_min": 494.0,
+    "wait_signal_min": 175.0,
+    "transit_dwell_h": 0.49943502824858754,
+    "solve_ms_avg": 123.0736111111111
+   }
+  },
+  {
+   "seed": 5,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 73.91304347826086,
+    "station_delay_train_h": 4.133333333333333,
+    "total_delay_min": 393.0,
+    "wait_signal_min": 278.0,
+    "transit_dwell_h": 0.5022598870056497,
+    "solve_ms_avg": 0.51875
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 76.81159420289855,
+    "station_delay_train_h": 2.8833333333333333,
+    "total_delay_min": 319.0,
+    "wait_signal_min": 186.0,
+    "transit_dwell_h": 0.4977401129943503,
+    "solve_ms_avg": 120.98333333333333
+   }
+  },
+  {
+   "seed": 6,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 69.56521739130434,
+    "station_delay_train_h": 5.183333333333334,
+    "total_delay_min": 461.0,
+    "wait_signal_min": 324.0,
+    "transit_dwell_h": 0.5090395480225989,
+    "solve_ms_avg": 0.5298611111111111
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 78.26086956521739,
+    "station_delay_train_h": 2.6333333333333333,
+    "total_delay_min": 304.0,
+    "wait_signal_min": 186.0,
+    "transit_dwell_h": 0.5002824858757062,
+    "solve_ms_avg": 124.02916666666667
+   }
+  },
+  {
+   "seed": 7,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 68.11594202898551,
+    "station_delay_train_h": 4.533333333333333,
+    "total_delay_min": 482.0,
+    "wait_signal_min": 315.0,
+    "transit_dwell_h": 0.49039548022598867,
+    "solve_ms_avg": 0.5201388888888889
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 73.91304347826086,
+    "station_delay_train_h": 3.2666666666666666,
+    "total_delay_min": 400.0,
+    "wait_signal_min": 208.0,
+    "transit_dwell_h": 0.48983050847457626,
+    "solve_ms_avg": 124.3638888888889
+   }
+  },
+  {
+   "seed": 8,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 73.91304347826086,
+    "station_delay_train_h": 3.566666666666667,
+    "total_delay_min": 365.0,
+    "wait_signal_min": 223.0,
+    "transit_dwell_h": 0.4889830508474576,
+    "solve_ms_avg": 0.45069444444444445
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 79.71014492753623,
+    "station_delay_train_h": 2.566666666666667,
+    "total_delay_min": 301.0,
+    "wait_signal_min": 154.0,
+    "transit_dwell_h": 0.4909604519774011,
+    "solve_ms_avg": 118.9375
+   }
+  },
+  {
+   "seed": 9,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 69.56521739130434,
+    "station_delay_train_h": 4.566666666666666,
+    "total_delay_min": 457.0,
+    "wait_signal_min": 228.0,
+    "transit_dwell_h": 0.5257062146892655,
+    "solve_ms_avg": 0.48194444444444445
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 73.91304347826086,
+    "station_delay_train_h": 3.716666666666667,
+    "total_delay_min": 399.0,
+    "wait_signal_min": 162.0,
+    "transit_dwell_h": 0.5268361581920904,
+    "solve_ms_avg": 122.52291666666666
+   }
+  },
+  {
+   "seed": 10,
+   "manual": {
+    "departed": 69,
+    "on_time_pct": 68.11594202898551,
+    "station_delay_train_h": 5.8500000000000005,
+    "total_delay_min": 570.0,
+    "wait_signal_min": 370.0,
+    "transit_dwell_h": 0.4949152542372881,
+    "solve_ms_avg": 0.5215277777777778
+   },
+   "smart": {
+    "departed": 69,
+    "on_time_pct": 75.36231884057972,
+    "station_delay_train_h": 3.9833333333333334,
+    "total_delay_min": 451.0,
+    "wait_signal_min": 256.0,
+    "transit_dwell_h": 0.4915254237288135,
+    "solve_ms_avg": 126.65208333333334
+   }
+  }
+ ],
+ "elapsed_s": 182
+}

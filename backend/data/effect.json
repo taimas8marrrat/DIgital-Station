@@ -1,0 +1,43 @@
+{
+ "base": {
+  "station_delay_train_h": {
+   "manual": 1.255,
+   "smart": 1.083
+  },
+  "wait_signal_min": {
+   "manual": 43.0,
+   "smart": 21.6
+  },
+  "on_time_pct": {
+   "manual": 75.957,
+   "smart": 77.234
+  },
+  "total_delay_min": {
+   "manual": 216.5,
+   "smart": 206.1
+  },
+  "trains": 47,
+  "runs": 10
+ },
+ "growth": {
+  "station_delay_train_h": {
+   "manual": 4.582,
+   "smart": 3.31
+  },
+  "wait_signal_min": {
+   "manual": 296.2,
+   "smart": 203.2
+  },
+  "on_time_pct": {
+   "manual": 70.145,
+   "smart": 74.493
+  },
+  "total_delay_min": {
+   "manual": 475.1,
+   "smart": 395.1
+  },
+  "trains": 69,
+  "runs": 10
+ },
+ "_note": "Средние по пакетному прогону scripts/compare_day.py (модель, mock)."
+}

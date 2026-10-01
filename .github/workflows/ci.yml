@@ -1,0 +1,23 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r backend/requirements.txt
+      - run: cd backend && python -m pytest -q
+      - name: Smoke test of the service
+        run: |
+          cd backend && (python -m uvicorn app.main:app --port 8000 &) && sleep 8
+          curl -sf http://localhost:8000/health
+          curl -sf -X POST http://localhost:8000/api/login -H 'content-type: application/json' -d '{"username":"dsp","password":"dsp"}'
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: cd frontend && npm install && npx tsc -b && VITE_SOURCE=server npx vite build

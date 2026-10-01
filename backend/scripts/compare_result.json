@@ -1,0 +1,65 @@
+{
+ "runs": [
+  {
+   "seed": 1,
+   "manual": {
+    "departed": 7,
+    "delay_min": 48,
+    "passenger_delay_min": 0,
+    "avg_delay_min": 6.9
+   },
+   "smart": {
+    "departed": 10,
+    "delay_min": 32,
+    "passenger_delay_min": 30,
+    "avg_delay_min": 3.2
+   }
+  }
+ ],
+ "summary": {
+  "delay_min": {
+   "manual": [
+    48,
+    0.0
+   ],
+   "smart": [
+    32,
+    0.0
+   ]
+  },
+  "passenger_delay_min": {
+   "manual": [
+    0,
+    0.0
+   ],
+   "smart": [
+    30,
+    0.0
+   ]
+  },
+  "avg_delay_min": {
+   "manual": [
+    6.9,
+    0.0
+   ],
+   "smart": [
+    3.2,
+    0.0
+   ]
+  },
+  "departed": {
+   "manual": [
+    7,
+    0.0
+   ],
+   "smart": [
+    10,
+    0.0
+   ]
+  },
+  "delay_reduction_pct": [
+   33,
+   0
+  ]
+ }
+}

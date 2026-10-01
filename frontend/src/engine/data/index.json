@@ -1,0 +1,23 @@
+{
+  "_note": "Формула индекса эффективности. Меняется без перекомпиляции: правкой файла или через PUT /api/config/index (роль admin).",
+  "weights": {
+    "throughput": 0.25,
+    "adherence": 0.25,
+    "conflicts": 0.2,
+    "track_load": 0.15,
+    "idle": 0.15
+  },
+  "thresholds": {
+    "norm": 80,
+    "attention": 60
+  },
+  "params": {
+    "adherence_penalty_per_min": 4,
+    "conflict_penalty_critical": 25,
+    "conflict_penalty_warning": 10,
+    "track_load_ideal": 0.75,
+    "idle_penalty_per_min": 2,
+    "delay_cost_kzt_per_train_hour": null
+  },
+  "_note_cost": "Стоимость поездо-часа задержки, тенге. Условная: задаётся пользователем, по умолчанию не задана."
+}

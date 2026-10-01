@@ -1,0 +1,34 @@
+{
+  "_note": "Модель станции Актогай (упрощённая). Реальные: код ЕСР, координаты, направления, расстояния до Саяка и Достыка. Условные: число путей (5 вместо 9), полезные длины, стрелки.",
+  "name": {"ru": "Актогай", "kk": "Ақтоғай"},
+  "esr": "708009",
+  "coords": [46.9533, 79.6817],
+  "tracks": [
+    {"id": 1, "kind": "passenger", "length": 600, "platform": true},
+    {"id": 2, "kind": "passenger", "length": 600, "platform": true},
+    {"id": 3, "kind": "main", "length": 1050, "platform": false},
+    {"id": 4, "kind": "freight", "length": 1050, "platform": false},
+    {"id": 5, "kind": "freight", "length": 1050, "platform": false}
+  ],
+  "throats": {
+    "west": {"directions": ["south", "west"]},
+    "east": {"directions": ["north", "east"]}
+  },
+  "directions": {
+    "south": {"ru": "Алматы", "kk": "Алматы", "throat": "west", "km": null, "line": "Турксиб"},
+    "west": {"ru": "Саяк — Мойынты", "kk": "Саяқ — Мойынты", "throat": "west", "km": 189, "line": "Мойынты — Актогай"},
+    "north": {"ru": "Аягоз — Семей", "kk": "Аягөз — Семей", "throat": "east", "km": null, "line": "Турксиб"},
+    "east": {"ru": "Достык (КНР)", "kk": "Достық (ҚХР)", "throat": "east", "km": 318, "line": "Актогай — Достык"}
+  },
+  "switches": [
+    {"id": "W1", "throat": "west", "tracks": [1, 2]},
+    {"id": "W2", "throat": "west", "tracks": [3]},
+    {"id": "W3", "throat": "west", "tracks": [4, 5]},
+    {"id": "E1", "throat": "east", "tracks": [1, 2]},
+    {"id": "E2", "throat": "east", "tracks": [3]},
+    {"id": "E3", "throat": "east", "tracks": [4, 5]}
+  ],
+  "route_conflict": "Все маршруты одной горловины взаимно враждебны; интервал между движениями — route_headway_min",
+  "route_headway_min": 2,
+  "clear_min": 3
+}

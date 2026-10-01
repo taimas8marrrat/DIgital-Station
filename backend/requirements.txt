@@ -1,0 +1,11 @@
+fastapi>=0.110
+uvicorn[standard]>=0.30
+websockets>=13,<16
+pydantic>=2.7,<3
+sqlalchemy>=2.0,<2.1
+psycopg2-binary>=2.9
+redis>=5.0
+ortools>=9.10,<10
+reportlab>=4.0
+python-dotenv>=1.0
+pytest>=8

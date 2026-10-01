@@ -1,0 +1,25 @@
+{
+  "_note": "Параметры планировщика. Меняются без перекомпиляции (PUT /api/config/planner, роль admin).",
+  "time_limit_s": 2.0,
+  "workers": 8,
+  "horizon_min": 240,
+  "priority_weight": {
+    "passenger": 10,
+    "container": 4,
+    "freight": 2
+  },
+  "wait_weight": 0.3,
+  "track_penalty": {
+    "freight_on_main": 5,
+    "container_on_freight": 1,
+    "through_on_side": 3
+  },
+  "stability_weight": {
+    "optimal": 1,
+    "minimal": 40
+  },
+  "manual_reaction_lag_min": 5,
+  "auto_apply": false,
+  "rolling_replan_s": 8,
+  "isolate_solver": true
+}

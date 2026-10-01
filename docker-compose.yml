@@ -1,0 +1,46 @@
+# Основной запуск:  docker compose up --build   ->  http://localhost:8000
+services:
+  redis:
+    image: redis:7-alpine
+    healthcheck: { test: ["CMD", "redis-cli", "ping"], interval: 5s, retries: 10 }
+
+  db:
+    image: timescale/timescaledb:latest-pg16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-ds}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-ds_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-digital_station}
+    volumes: [dbdata:/var/lib/postgresql/data]
+    healthcheck: { test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-ds}"], interval: 5s, retries: 20 }
+
+  ingest:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    command: uvicorn app.ingest_service:app --host 0.0.0.0 --port 8001
+    env_file: [.env]
+    environment: { BUS: redis, REDIS_URL: "redis://redis:6379/0" }
+    depends_on: { redis: { condition: service_healthy } }
+    ports: ["8001:8001"]
+
+  core:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    env_file: [.env]
+    environment:
+      BUS: redis
+      REDIS_URL: "redis://redis:6379/0"
+      EMBED_INGEST: "false"
+      DB_URL: "postgresql+psycopg2://${POSTGRES_USER:-ds}:${POSTGRES_PASSWORD:-ds_secret}@db:5432/${POSTGRES_DB:-digital_station}"
+    depends_on:
+      redis: { condition: service_healthy }
+      db: { condition: service_healthy }
+    ports: ["8000:8000"]
+    volumes: ["./backend/config:/app/config"]
+
+  simulator:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    command: python -m simulator.sim --url ws://ingest:8001/ws/ingest
+    env_file: [.env]
+    depends_on: [ingest]
+
+volumes:
+  dbdata:
